@@ -1,0 +1,17 @@
+{
+  "name": "bloxsql",
+  "version": "1.0.0",
+  "description": "mySQL to Roblox bridge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Harry Madgwick",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
