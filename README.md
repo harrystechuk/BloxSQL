@@ -21,7 +21,7 @@ https://dev.mysql.com/doc/
 
 Documentation for BloxSQL here:
 
-https://docs.google.com/document/d/1cHEYBPbYBwqj0lAiFHse75vprwM8_lG3_-7nj7HP_jQ
+https://docs.bloxsql.harrystech.xyz/
 
 ---------------------------------------------------------
 

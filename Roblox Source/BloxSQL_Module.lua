@@ -19,7 +19,7 @@ local BloxSQL = {}
 local HttpService = game:GetService("HttpService")
 
 local function Post(packet)
-	local posted = HttpService:PostAsync("http://robloxdb.tk:5050/v1", packet, Enum.HttpContentType.ApplicationJson, false)
+	local posted = HttpService:PostAsync("http://bloxsql.tk:25565/v1", packet, Enum.HttpContentType.ApplicationJson, false)
 	local returnData
 	local success, err = pcall(function()
 		returnData = HttpService:JSONDecode(posted)
@@ -28,8 +28,7 @@ local function Post(packet)
 	if success then
 		return returnData
 	else
-		print(err)
-		print("Error in your mySQL query! Please check your syntax.")
+		return(err)
 	end
 end
 
@@ -54,16 +53,16 @@ function BloxSQL:execute(QuerySQL, settings)
 					local response = Post(HttpService:JSONEncode(Data))
 					return response
 				else
-					warn("BloxSQL: Database not found!")
+					return("BloxSQL: Database not found!")
 				end
 			else
-				warn("BloxSQL: Password not found!")
+				return("BloxSQL: Password not found!")
 			end
 		else
-			warn("BloxSQL: Username not found!")
+			return("BloxSQL: Username not found!")
 		end
 	else
-		warn("BloxSQL: Host not found!")
+		return("BloxSQL: Host not found!")
 	end
 end
 

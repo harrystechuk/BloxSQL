@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 // Create Web Server
 
 const app = express();
-const port = 80;
+const port = 25565;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -29,12 +29,12 @@ app.post("/v1/", async (request, response) => {
     const database = request.body.Database;
 
     const con = mysql.createConnection({
-        host, user, password, database,
+        host, user, password, port, database
     });
     try {
         con.connect(function(err) {
-            if (err) console.log('Database Connection ERROR for ' + host, user, password, database + " Error: " + err)
-            else console.log('Database Connection SUCCESS for ' + host, user, password, database)
+            if (err) console.log('Database Connection ERROR for ' + host + " Error: " + err)
+            else console.log('Database Connection SUCCESS for ' + host)
         });
     } catch (error) {
         console.log('Error was caught!')
