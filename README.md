@@ -1,3 +1,5 @@
+**BloxSQL Reloaded is no longer being maintained. You may use the source code to host your own instances if you wish!**
+
 Copyright 2021 Harry Madgwick
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
