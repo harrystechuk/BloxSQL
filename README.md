@@ -1,4 +1,4 @@
-**BloxSQL Reloaded is no longer being maintained. You may use the source code to host your own instances if you wish!**
+**BloxSQL Reloaded is still being maintained**
 
 Copyright 2021 Harry Madgwick
 
@@ -21,9 +21,9 @@ Information on mySQL here:
 
 https://dev.mysql.com/doc/
 
-Documentation for BloxSQL here:
+The official API:
 
-https://docs.bloxsql.harrystech.xyz/
+https://bloxsql.harrystech.uk/
 
 ---------------------------------------------------------
 
