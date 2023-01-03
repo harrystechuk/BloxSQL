@@ -1,4 +1,4 @@
-**BloxSQL Reloaded is still being maintained**
+**BloxSQL Reloaded is still being maintained under hCloud**
 
 Copyright 2023 Harry Madgwick
 
