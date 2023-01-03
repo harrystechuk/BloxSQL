@@ -22,14 +22,14 @@ const listener = app.listen(port, () => {
 
 // Default
 
-app.post("/v1/", async (request, response) => {
+app.post("/v1/",  (request, response) => {
     const host = request.body.Host;
     const user = request.body.Username;
     const password = request.body.Password;
     const database = request.body.Database;
 
     const con = mysql.createConnection({
-        host, user, password, port, database
+        host, user, password, database
     });
     try {
         con.connect(function(err) {
