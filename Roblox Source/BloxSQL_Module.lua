@@ -33,7 +33,7 @@ local function Post(packet)
 end
 
 function BloxSQL:execute(QuerySQL, settings)
-	local Host = settings.SQL.Host
+	local Host = settings.Host
 	local Username = settings.Username
 	local Password = settings.Password
 	local Database = settings.Database
