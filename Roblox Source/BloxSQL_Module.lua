@@ -34,19 +34,19 @@ end
 
 function BloxSQL:execute(QuerySQL, settings)
 	local Host = settings.SQL.Host
-	local Username = settings.SQL.Username
-	local Password = settings.SQL.Password
-	local Database = settings.SQL.Database
+	local Username = settings.Username
+	local Password = settings.Password
+	local Database = settings.Database
 	
 	if Host ~= nil then
 		if Username ~= nil then
 			if Password ~= nil then
 				if Database ~= nil then
 					local Data = {
-						Host = settings.SQL.Host,
-						Username = settings.SQL.Username,
-						Password = settings.SQL.Password,
-						Database = settings.SQL.Database,
+						Host = settings.Host,
+						Username = settings.Username,
+						Password = settings.Password,
+						Database = settings.Database,
 						Query = QuerySQL
 					 }
 					
