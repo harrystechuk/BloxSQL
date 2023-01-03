@@ -19,7 +19,7 @@ local BloxSQL = {}
 local HttpService = game:GetService("HttpService")
 
 local function Post(packet)
-	local posted = HttpService:PostAsync("http://bloxsql.harrystech.xyz:25565/v1", packet, Enum.HttpContentType.ApplicationJson, false)
+	local posted = HttpService:PostAsync("http://38.242.235.101:2020/v1", packet, Enum.HttpContentType.ApplicationJson, false)
 	local returnData
 	local success, err = pcall(function()
 		returnData = HttpService:JSONDecode(posted)
